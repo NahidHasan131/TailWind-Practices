@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login page</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Boxicons CDN -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <!-- Google Fonts - Poppins -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    </head>
+    <body
+        class="flex justify-center items-center min-h-screen font-poppins bg-[url('https://static.vecteezy.com/system/resources/thumbnails/039/302/519/small_2x/ai-generated-ethereal-moon-and-stars-background-image-generative-ai-free-photo.jpg')] bg-no-repeat bg-cover bg-center">
+        <div class="w-[420px] text-white px-10 py-8 border-2 border-white/20 rounded-lg backdrop-blur-lg shadow-[0_0_10px_rgba(255,255,255,0.2)]">
+            <h1 class="text-4xl font-bold text-center mb-8">Login</h1>
+
+            <!-- Username Input -->
+            <div class="relative mb-8">
+                <input type="text" placeholder="Username" required class="w-full h-12 bg-transparent border-2 border-white/20 rounded-[40px] text-base text-white pl-5 pr-11 py-5 outline-none placeholder-white" />
+                <i class="bx bxs-user absolute right-5 top-1/2 -translate-y-1/2 text-xl"></i>
+            </div>
+
+            <!-- Password Input -->
+            <div class="relative mb-8">
+                <input type="password" placeholder="Password" required class="w-full h-12 bg-transparent border-2 border-white/20 rounded-[40px] text-base text-white pl-5 pr-11 py-5 outline-none placeholder-white" />
+                <i class="bx bxs-lock-alt absolute right-5 top-1/2 -translate-y-1/2 text-xl"></i>
+            </div>
+
+            <!-- Remember & Forgot -->
+            <div class="flex justify-between items-center mb-5 -mt-4 text-base">
+                <label class="flex items-center"> <input type="checkbox" class="accent-white mr-1" />Remember me</label>
+                <a href="#" class="text-white hover:underline">Forgot Password</a>
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit" class="w-full h-11 bg-white text-gray-800 border-none rounded-[40px] text-base font-bold cursor-pointer shadow-[0_0_10px_rgba(255,255,255,0.1)]">Login</button>
+
+            <!-- Register Link -->
+            <div class="text-base text-center mt-4 mb-4">
+                <p>
+                    Don't have an account?
+                    <a href="#" class="text-white font-semibold hover:underline">Register</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

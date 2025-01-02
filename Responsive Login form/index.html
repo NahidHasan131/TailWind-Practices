@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet" />
+    <!-- Box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="font-poppins flex items-center justify-center min-h-screen bg-gray-100">
+    
+    <div class=" flex flex-col space-y-4 bg-white shadow-2xl rounded-xl md:flex-row md:space-y-0">
+        <!-- left side -->
+        <div class="flex flex-col justify-center py-10 px-11 md:py-10 md:px-14">
+            <span class="mb-3 text-4xl font-bold">Sign in</span>
+            <span class="font-light text-gray-600 mb-6">
+                Welcom back! Please sign in first
+            </span>
+            <div class="pb-4 relative">
+                <span class="mb-2 text-lg">Email:</span>
+                <input type="text" placeholder="Enter email" class="w-full h-11 mt-1 pl-5 pr-11 py-5 border border-gray-400 rounded-3xl placeholder:font-light placeholder:text-gray-500 outline-none"/>
+                <i class='bx bx-envelope absolute right-5 top-11' ></i>
+            </div>
+            <div class=" relative">
+                <span class="text-lg">Password:</span>
+                <input type="password" placeholder="Enter password" class="w-full h-11 mt-1 pl-5 pr-11 py-5 border border-gray-400 rounded-3xl placeholder:font-light placeholder:text-gray-500 outline-none" />
+                <i class='bx bx-lock-alt absolute right-5 top-11'></i>
+                
+            </div>
+            <div class="flex justify-between w-full py-4">
+                <label>
+                    <input type="checkbox"class="mr-1" />
+                    <span class="text-md">Remember me</span>
+                </label>
+                <span class="font-semibold text-md hover:underline cursor-pointer">Forgot password</span>
+            </div>
+            <button class="w-full h-11 border border-gray-400 bg-white text-black  p-2 rounded-3xl mb-4 hover:bg-gray-800  hover:text-white font-bold">Sign in</button>
+            
+            <div class="text-center text-gray-400">
+                Dont'have an account?
+                <span class="font-semibold text-black hover:underline cursor-pointer">Sign up</span>
+            </div>
+        </div>
+        <!-- {/* right side */} -->
+        <div>
+            <img src="image.jpg" alt="img" class="w-[400px] h-full hidden rounded-r-2xl md:block object-cover" />
+        </div>
+    </div>
+</body>
+</html>

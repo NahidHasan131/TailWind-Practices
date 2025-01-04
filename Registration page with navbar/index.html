@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - WindeCoder app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body class="bg-gray-900 min-h-screen">
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between max-w-7xl mx-auto p-6 mb-10">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 rounded-full">
+              <img src="./img.png" alt="">
+            </div>
+            <span class="text-white font-semibold">Wind Coder.</span>
+        </div>
+        <div class="flex space-x-8">
+            <a href="#" class="text-white hover:text-gray-400 transition ">Home</a>
+            <a href="#" class="text-white hover:text-gray-400 transition">Join</a>
+        </div>
+    </nav>
+    
+    <div class="max-w-7xl mx-auto p-6 flex flex-col md:flex-row gap-8">
+        <!-- Left Content -->
+        <div class="flex-1">
+            <div class="mb-8">
+                <span class="text-gray-400 text-sm tracking-wide">START FOR FREE</span>
+                <h1 class="text-white text-4xl font-bold mt-2 mb-4">Create new account.</h1>
+                <p class="text-gray-400">Already A Member? 
+                    <a href="#" class="text-gray-200 font-semibold hover:underline">Log In</a>
+                </p>
+            </div>
+    
+            <!-- Form -->
+            <form class="space-y-4">
+                <div class="flex gap-4">
+                    <div class="flex-1 relative">
+                        <input type="text" placeholder="First name" value="Wind"
+                            class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-accent transition">
+                        <i class='bx bx-id-card absolute text-xl text-white right-5 top-3'></i>
+                    </div>
+                    <div class="flex-1 relative">
+                        <input type="text" placeholder="Last name" value="Coder"
+                            class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-accent transition">
+                        <i class='bx bx-id-card absolute text-xl text-white right-5 top-3'></i>
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <input type="email" value="thwindcoder@gmail.com" placeholder="Enter Your Email" class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 outline-none transition">
+                    <i class='bx bx-envelope absolute text-xl text-white right-5 top-3'></i>
+                </div>
+    
+                <div class="relative">
+                    <input type="password" value="•••••••" placeholder="Enter Your Password" class="w-full bg-gray-800/50 border border-gray-700 rounded-lg pl-4 pr-10 py-3 text-white placeholder-gray-500 outline-none transition">
+                    <i class='bx bx-low-vision absolute text-xl text-white right-5 top-3'></i>
+                </div>
+    
+                <div class="flex justify-between mt-8">
+                    <button type="button" class="px-6 py-3 bg-gray-800/50 font-semibold text-gray-300 rounded-lg hover:bg-gray-700/50 transition">Change method</button>
+                    <button type="submit" class="px-6 py-3 bg-blue-accent text-white rounded-lg border border-gray-700 font-semibold hover:bg-gray-800/50 transition">Create account</button>
+                </div>
+            </form>
+        </div>
+    
+        <!-- Right Image -->
+        <div class="flex-2 hidden md:block">
+            <img src="./draw2.png" alt="" class="w-[680px] bg-cover bg-center rounded-lg">
+        </div>
+    </div>    
+</body>
+</html>

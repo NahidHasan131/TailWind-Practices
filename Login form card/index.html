@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="min-h-screen bg-sky-100 flex items-center justify-center p-6">
+    
+    <!-- Sign In Card -->
+    <div class="w-full max-w-md bg-white rounded-xl shadow-md p-8 space-y-4">
+        <!-- App Icon -->
+        <div class="flex justify-center ">
+            <i class='bx bx-log-in text-2xl bg-white py-3 px-4 rounded-3xl shadow-lg'></i>
+        </div>
+
+        <!-- Header -->
+        <div class="text-center space-y-2">
+            <h1 class="text-2xl font-semibold text-gray-900">Sign in with email</h1>
+            <p class="text-gray-600 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Quod iure fugiat aliquam?
+            </p>
+        </div>
+
+        <!-- Form -->
+        <form class="space-y-4">
+            <div class="space-y-4">
+                <!-- Email Input -->
+                <div class="relative">
+                    <input type="email" placeholder="Email" 
+                        class="w-full pl-12 pr-4 py-3.5 bg-gray-100 rounded-xl text-gray-900 placeholder-gray-500 outline-none">
+                    <i class='bx bx-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-xl'></i>
+                </div>
+
+                <!-- Password Input -->
+                <div class="relative">
+                    <input type="password" placeholder="Password" 
+                        class="w-full pl-12 pr-11 py-3.5 bg-gray-100 rounded-xl text-gray-900 placeholder-gray-500 outline-none">
+                    <i class='bx bx-lock absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-xl'></i>
+                    <i class='bx bx-hide absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 text-xl'></i>
+                    
+                </div>
+            </div>
+
+            <!-- Forgot Password -->
+            <div class="text-right">
+                <a href="#" class="text-sm font-semibold text-gray-600 hover:text-gray-900">Forgot password?</a>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" 
+                class="w-full py-3.5 bg-gray-900 text-white rounded-xl hover:bg-black transition">
+                Get Started
+            </button>
+
+            <!-- Social Login Divider -->
+            <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                    <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center text-sm">
+                    <span class="px-4 bg-white text-gray-500">Or sign in with</span>
+                </div>
+            </div>
+
+            <!-- Social Login Buttons -->
+            <div class="flex justify-center items-center gap-4">
+                <button class="flex items-center justify-center py-3 px-4 shadow-md bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">
+                    <i class='bx bxl-google text-xl'></i>
+                </button>
+                <button class="flex items-center justify-center py-3 px-4 shadow-md bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">
+                    <i class='bx bxl-facebook text-xl text-blue-600'></i>
+                </button>
+                <button class="flex items-center justify-center py-3 px-4 shadow-md bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">
+                    <i class='bx bxl-apple text-xl'></i>
+                </button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

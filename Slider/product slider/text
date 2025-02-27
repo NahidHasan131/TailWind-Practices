@@ -1,0 +1,8 @@
+const products = [
+        { name: "Premium Headphones", price: "$299", image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=w=1000&q=80", rating: 4.8 },
+        { name: "Smart Watch", price: "$199", image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?crop=w=1000&q=80", rating: 4.5 },
+        { name: "Wireless Earbuds", price: "$149", image: "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?crop=w=1000&q=80", rating: 4.7 },
+        { name: "Digital Camera", price: "$599", image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?crop=w=1000&q=80", rating: 4.9 },
+        { name: "Bluetooth Speaker", price: "$129", image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?crop=w=1000&q=80", rating: 4.6 },
+        { name: "Gaming Mouse", price: "$89", image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?crop=w=1000&q=80", rating: 4.7 },
+      ];

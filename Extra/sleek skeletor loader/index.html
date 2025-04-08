@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Better Skeleton Loader</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .shimmer {
+      background: linear-gradient(90deg, #d1d5db 25%, #e5e7eb 50%, #d1d5db 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: -200% 0;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex justify-center items-center bg-gray-900">
+
+  <div class="w-72 p-4 bg-gray-800 rounded-lg shadow-lg space-y-4">
+    <!-- Circle for image/avatar -->
+    <div class="w-16 h-16 rounded-full shimmer"></div>
+
+    <!-- Lines for text -->
+    <div class="space-y-2">
+      <div class="w-3/4 h-4 rounded shimmer"></div>
+      <div class="w-1/2 h-4 rounded shimmer"></div>
+    </div>
+  </div>
+
+</body>
+</html>

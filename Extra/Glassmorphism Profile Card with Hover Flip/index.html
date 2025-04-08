@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Flip Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .card-wrapper {
+      perspective: 1000px;
+    }
+
+    .card {
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      backface-visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-900">
+
+  <div class="card-wrapper w-64 h-80">
+    <div class="card w-full h-full">
+      <!-- Front -->
+      <div class="card-face bg-white/10 backdrop-blur-lg border border-white/20 text-white">
+        <img src="https://i.pravatar.cc/100" class="rounded-full mb-3" />
+        <h3 class="font-bold">John Doe</h3>
+        <p class="text-gray-300">Web Developer</p>
+      </div>
+
+      <!-- Back -->
+      <div class="card-face card-back bg-gray-800 text-white">
+        <p class="text-center px-4">Follow me on Twitter:<br> @johndoe</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

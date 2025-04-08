@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typewriter Effect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes typewriter {
+      from { width: 0; }
+      to { width: 12ch; } /* Match number of characters */
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .typewriter {
+      animation: typewriter 3s steps(12) 1s forwards, 
+        blink 0.7s step-end infinite;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-900">
+
+  <h1 class="text-white text-3xl font-bold typewriter  overflow-hidden whitespace-nowrap border-r-[3px] border-white w-[12ch]">Hello, Coders!</h1>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reveal Image on Hover</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-900">
+
+  <div class="relative w-80 h-60 overflow-hidden rounded-xl group">
+    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" class="absolute inset-0 w-full h-full object-cover filter blur-lg scale-105 transition duration-700 ease-in-out group-hover:blur-0 group-hover:scale-100" />
+    <div class="absolute inset-0 bg-black/50 group-hover:bg-transparent transition duration-700 ease-in-out"></div>
+  </div>
+
+</body>
+</html>

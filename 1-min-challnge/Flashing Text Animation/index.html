@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title></title>
+  <title>Flashing Text Animation</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style> @keyframes flash { 50% { opacity: 0; } } .animate-flash { animation: flash 1s infinite; } </style>
 </head>
 <body class="min-h-screen flex items-center justify-center bg-gray-900">
 
-  
+    <h1 class="animate-flash text-white text-4xl font-bold">FLASH!</h1>
+
+
+      
 
 </body>
 </html>

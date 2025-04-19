@@ -7,10 +7,19 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen flex justify-center items-center bg-gray-900 text-white">
-
-    <label class="mr-10">Font Size: <span id="val">16</span>px</label>
-    <input type="range" min="10" max="40" value="16" oninput="val.innerText=this.value; demo.style.fontSize=this.value+'px'" />
-    <p id="demo" class="ml-10">Live text preview</p>
+    <button onclick="gen()">🎨 Generate</button>
+    <div id="colors" class="flex gap-2 mt-2"></div>
+    
+    <script>
+      function gen() {
+        colors.innerHTML = '';
+        for(let i=0; i<5; i++) {
+          const c = '#'+Math.floor(Math.random()*16777215).toString(16);
+          colors.innerHTML += `<div style="background:${c}" class="w-12 h-12" title="${c}"></div>`;
+        }
+      }
+    </script>
+    
     
   
   

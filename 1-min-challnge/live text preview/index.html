@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confetti Button Explosion </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex justify-center items-center bg-gray-900 text-white">
+
+    <label class="mr-10">Font Size: <span id="val">16</span>px</label>
+    <input type="range" min="10" max="40" value="16" oninput="val.innerText=this.value; demo.style.fontSize=this.value+'px'" />
+    <p id="demo" class="ml-10">Live text preview</p>
+    
+  
+  
+</body>
+</html>

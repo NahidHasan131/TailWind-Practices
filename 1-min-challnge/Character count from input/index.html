@@ -9,10 +9,10 @@
 <body class="min-h-screen flex items-center justify-center bg-gray-900">
 
     <input type="text" id="textInput" oninput="countChars()" class="w-60 p-4 rounded-l-lg outline-none">
-    <p id="counter" class="px-6 py-4 bg-gray-700 hover:bg-gray-800 font-semibold text-white rounded-r-lg">0/50</p>
+    <p id="counter" class="px-6 py-4 bg-cyan-700 hover:bg-cyan-800 font-semibold text-white rounded-r-lg">0</p>
 <script>
   function countChars() {
-    document.getElementById("counter").textContent = `${document.getElementById("textInput").value.length}/50`;
+    document.getElementById("counter").textContent = `${document.getElementById("textInput").value.length}`;
   }
 </script>
 
